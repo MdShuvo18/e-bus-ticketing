@@ -31,6 +31,10 @@
         .hr-border {
             border: 1px dashed rgba(3, 7, 18, 0.2);
         }
+
+        .footer-hr {
+            border: 1.5px dashed rgba(255, 255, 255, 0.3);
+        }
     </style>
 
     <!-- customized color -->
@@ -432,9 +436,9 @@
                                 <h3>Total</h3>
                                 <p>BDT 1100</p>
                             </div>
-                            <label class="input justify-between input-bordered flex items-center gap-[10px]: lg:gap-2">
+                            <label class="input justify-between input-bordered flex items-center gap-[10px] lg:gap-2">
                                 <input type="text" class=" h-16 lg:justify-end" placeholder="Search" />
-                                <span class="btn ml-10 bg-banner-text-color lg:w-[100px] text-white">Apply</span>
+                                <span class="btn -ml-14 lg:ml-10 bg-banner-text-color lg:w-[100px] text-white">Apply</span>
                             </label>
 
                         </div>
@@ -491,11 +495,37 @@
         <!-- seat section end -->
     </main>
 
-    <footer>
-        <footer class="footer p-10 bg-black text-neutral-content">
-            <h3>P-Ticket</h3>
+    <footer class="mt-6">
+        <footer class="footer p-11 bg-neutral text-neutral-content">
+           
+            <div>
+                <h3 class="text-3xl font-extrabold text-white">P-Ticket</h3>
+                <p class="text-lg text-gray-500">P-Ticket is a digital platform to make your daily commuting better.</p>
+                <h4 class="mt-7">@all rights reserved, P-Ticket services limited.2024</h4>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold text-white">Download our app</h3>
+                <div class="flex flex-row justify-center items-center gap-4">
+                    <div><img src="./images/playstore.png" alt=""></div>
+                    <div>
+                        <h5 class="text-sm text-gray-500">Get On</h5>
+                        <p class="text-lg font-medium text-white">Google Play</p>
+                    </div>
+                </div>
+                
+                <div class="flex gap-4 mt-6">
+                    <p>Terms & condition</p>
+                    <p>Return & refund policy</p>
+                    <p>Privacy policy</p>
+                </div>
+            </div>
+           
+
+            
         </footer>
     </footer>
+
 </body>
 
 </html>
