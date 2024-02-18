@@ -15,4 +15,5 @@ for (const sit of sits) {
       const sitInnerText=e.target.innerText;
       console.log(sitInnerText)
       
+})
 }
