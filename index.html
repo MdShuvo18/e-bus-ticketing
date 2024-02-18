@@ -208,7 +208,7 @@
                                     <div><img src="./images/seat-green.png" alt=""></div>
                                     <div>
                                         <p class="text-banner-text-color">
-                                            <span>40</span> Seats Left
+                                            <span id="sit-left">40</span> Seats Left
                                         </p>
                                     </div>
                                 </button>
@@ -406,7 +406,7 @@
 
                         <div class="card-body">
                             <div class="inter font-medium flex justify-center items-center text-black">
-                                <p>Sit <span class="text-green-800 text-xl font-extrabold"> </span></p>
+                                <p>Sit <span id="sit-add" class="text-green-800 text-xl font-extrabold"> </span></p>
                                 <p>Class</p>
                                 <p>Price</p>
                             </div>
@@ -438,7 +438,8 @@
                             </div>
                             <label class="input justify-between input-bordered flex items-center gap-[10px] lg:gap-2">
                                 <input type="text" class=" h-16 lg:justify-end" placeholder="Search" />
-                                <span class="btn -ml-14 lg:ml-10 bg-banner-text-color lg:w-[100px] text-white">Apply</span>
+                                <span
+                                    class="btn -ml-14 lg:ml-10 bg-banner-text-color lg:w-[100px] text-white">Apply</span>
                             </label>
 
                         </div>
@@ -497,7 +498,7 @@
 
     <footer class="mt-6">
         <footer class="footer p-11 bg-neutral text-neutral-content">
-           
+
             <div>
                 <h3 class="text-3xl font-extrabold text-white">P-Ticket</h3>
                 <p class="text-lg text-gray-500">P-Ticket is a digital platform to make your daily commuting better.</p>
@@ -513,18 +514,19 @@
                         <p class="text-lg font-medium text-white">Google Play</p>
                     </div>
                 </div>
-                
+
                 <div class="flex gap-4 mt-6">
                     <p>Terms & condition</p>
                     <p>Return & refund policy</p>
                     <p>Privacy policy</p>
                 </div>
             </div>
-           
 
-            
+
+
         </footer>
     </footer>
+    <script src="common.js"></script>
     <script src="scripts.js"></script>
 </body>
 
