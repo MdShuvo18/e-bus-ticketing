@@ -81,7 +81,8 @@ document.getElementById('cupon-btn').addEventListener('click', function (e) {
       console.log(finalGrandCost)
 
       document.getElementById('grand-total').innerText = finalGrandCost;
-      document.getElementById('cupon-btn').style.visibility = 'hidden'
+      // document.getElementById('cupon-btn').style.visibility = 'hidden'
+      document.getElementById('input-label').style.visibility='hidden';
 
 
 
@@ -95,7 +96,8 @@ document.getElementById('cupon-btn').addEventListener('click', function (e) {
       const finalGrandCost = parseInt(GrandCost);
 
       document.getElementById('grand-total').innerText = finalGrandCost;
-      document.getElementById('cupon-btn').style.visibility = 'hidden'
+      // document.getElementById('cupon-btn').style.visibility = 'hidden'
+      document.getElementById('input-label').style.visibility='hidden';
 
       console.log('20% off')
    } else {
