@@ -5,8 +5,7 @@ let sitAdd = 0;
 for (const sit of sits) {
    sit.addEventListener('click', function (e) {
 
-
-
+   
       if (sitAdd <= 3) {
          // sit decrerment
          sitLeft = sitLeft - 1;
@@ -72,14 +71,14 @@ document.getElementById('cupon-btn').addEventListener('click', function (e) {
       const discountNew = 15;
       const grandTotal = document.getElementById('grand-total').innerText;
       const convertedGrandTotal = parseInt(grandTotal);
-      console.log('total cost :', convertedGrandTotal)
+      // console.log('total cost :', convertedGrandTotal)
 
       const afterDiscount = (discountNew / 100) * convertedGrandTotal;
       console.log('discount price :', afterDiscount)
 
       const GrandCost = convertedGrandTotal - afterDiscount;
       const finalGrandCost = parseInt(GrandCost)
-      console.log(finalGrandCost)
+      // console.log(finalGrandCost)
 
       document.getElementById('grand-total').innerText = finalGrandCost;
       // document.getElementById('cupon-btn').style.visibility = 'hidden'

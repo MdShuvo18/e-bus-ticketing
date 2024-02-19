@@ -41,10 +41,6 @@
             gap: 40px;
         }
 
-        .selected{
-            background-color: limegreen;
-            pointer-events: none;
-        }
     </style>
 
     <!-- customized color -->
@@ -227,12 +223,12 @@
 
                         <div class="card  lg:w-[850px] lg:h-[250px]  bg-gray-200 text-neutral-content">
                             <div class="card-body space-y-4">
-                                <div class="raleway flex justify-center lg:gap-96">
+                                <div class="raleway flex flex-row justify-between gap-14 lg:gap-[600px]">
                                     <p class="text-lg font-semibold text-gray-500">Route</p>
                                     <p class="text-lg font-semibold text-black">Dhaka-Sylhet</p>
                                 </div>
                                 <hr class="hr-border">
-                                <div class="raleway flex justify-center lg:gap-96">
+                                <div class="raleway flex justify-between lg:gap-[550px]">
                                     <p class="text-lg font-semibold text-gray-500">Departure Time</p>
                                     <p class="text-lg font-semibold text-black">9.00 pm</p>
                                 </div>
@@ -264,7 +260,7 @@
         <!-- pH paribbhan section end -->
 
         <!-- seat section start -->
-        <section class="mt-[450px] border-t-green-500  lg:mt-28">
+        <section class="mt-[450px] lg:mt-28">
 
             <div class="flex flex-col lg:flex-row justify-around gap-16">
                 <!-- left part -->
@@ -412,9 +408,9 @@
 
                         <div class="card-body">
                             <div class="inter font-medium flex justify-center items-center text-black">
-                                <p>Sit <span id="sit-add" class="text-white text-xl font-extrabold  border rounded-full bg-green-800">0</span></p>
-                                <p>Class</p>
-                                <p>Price</p>
+                                <p class="lg:ml-24">Sit <span id="sit-add" class="text-white text-xl font-extrabold  border rounded-full bg-green-800">0</span></p>
+                                <p class="">Class</p>
+                                <p class="">Price</p>
                             </div>
                             <hr class="hr-border  mb-3">
                             <div class="inter font-medium flex justify-center items-center gap-10 ">
@@ -434,7 +430,7 @@
                             </div>
                             <label id="input-label" class="input justify-between input-bordered flex items-center gap-[10px] lg:gap-2">
                                 <input id="cupon-input" type="text" class=" lg:justify-end"
-                                    placeholder="Have You any Cupon ?" />
+                                    placeholder="Have Cupon ?" />
                                 <span id="cupon-btn"
                                     class="btn -ml-14 lg:ml-10 bg-banner-text-color lg:w-[100px] text-white">Apply</span>
                             </label>
@@ -443,7 +439,7 @@
 
                         <div
                             class="flex flex-row justify-center gap-[120px] lg:gap-[300px] text-black pb-3 items-center lg:mr-12">
-                            <h3>Grand Total</h3>
+                            <h3 class="ml-6">Grand Total</h3>
                             <p>BDT <span id="grand-total">0</span></p>
                         </div>
                     </div>
@@ -471,8 +467,6 @@
                                 class="input input-bordered w-full lg:w-[570px]" />
                         </label> -->
 
-                        <!-- <button id="next-btn"
-                            class="btn bg-banner-text-color w-full lg:w-[570px] text-white font-extrabold">Next</button> -->
 
                         <!-- The button to open modal -->
                         <a href="#my_modal_8"
@@ -504,7 +498,7 @@
     </main>
 
     <footer class="mt-6">
-        <footer class="footer p-11 bg-neutral text-neutral-content">
+        <footer class="flex flex-col lg:flex-row justify-between footer p-11 bg-neutral text-neutral-content">
 
             <div>
                 <h3 class="text-3xl font-extrabold text-white">P-Ticket</h3>
@@ -522,7 +516,7 @@
                     </div>
                 </div>
 
-                <div class="flex gap-4 mt-6">
+                <div class="flex flex-row gap-4 mt-6">
                     <p>Terms & condition</p>
                     <p>Return & refund policy</p>
                     <p>Privacy policy</p>
