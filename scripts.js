@@ -105,17 +105,9 @@ document.getElementById('cupon-btn').addEventListener('click', function (e) {
    }
 });
 
-
-
-// next button function
-document.getElementById('next-btn').addEventListener('click', function () {
-   const personName = document.getElementById('passenger-name').value;
-  
+document.getElementById('modal-btn').addEventListener('click',function(){
+   console.log('hi')
 })
-
-
-
-
 
 // setInnerText common function
 function setInnerText(id, value) {
