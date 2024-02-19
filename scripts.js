@@ -54,6 +54,7 @@ for (const sit of sits) {
 
          // set button background color
          sit.classList.add('bg-lime-500');
+         sit.Disabled = true;
       } else {
          sit.ariaDisabled;
          alert('Go Back!!! youn can not booked over 4 tickets')
@@ -82,7 +83,7 @@ document.getElementById('cupon-btn').addEventListener('click', function (e) {
 
       document.getElementById('grand-total').innerText = finalGrandCost;
       // document.getElementById('cupon-btn').style.visibility = 'hidden'
-      document.getElementById('input-label').style.visibility='hidden';
+      document.getElementById('input-label').style.visibility = 'hidden';
 
 
 
@@ -97,7 +98,7 @@ document.getElementById('cupon-btn').addEventListener('click', function (e) {
 
       document.getElementById('grand-total').innerText = finalGrandCost;
       // document.getElementById('cupon-btn').style.visibility = 'hidden'
-      document.getElementById('input-label').style.visibility='hidden';
+      document.getElementById('input-label').style.visibility = 'hidden';
 
       console.log('20% off')
    } else {
@@ -105,7 +106,7 @@ document.getElementById('cupon-btn').addEventListener('click', function (e) {
    }
 });
 
-document.getElementById('modal-btn').addEventListener('click',function(){
+document.getElementById('modal-btn').addEventListener('click', function () {
    console.log('hi')
 })
 
