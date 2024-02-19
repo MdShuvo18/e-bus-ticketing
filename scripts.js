@@ -62,7 +62,7 @@ for (const sit of sits) {
 }
 
 
-// cuppon apply button
+// cupon apply button
 document.getElementById('cupon-btn').addEventListener('click', function (e) {
 
    const cuponInput = document.getElementById('cupon-input');

@@ -36,10 +36,10 @@
             border: 1.5px dashed rgba(255, 255, 255, 0.3);
         }
 
-        li{
+        li {
             display: flex;
-            gap:40px;
-           
+            gap: 40px;
+
         }
     </style>
 
@@ -56,6 +56,7 @@
                         'best-offer-bg-left': 'rgb(255, 191, 15)',
                         'best-offer-bg-right': 'rgb(247, 140, 156)',
                         'p.h-paribavan-bg': 'rgb(247, 248, 248)',
+                        'modal-text-clr': 'rgb(39, 174, 96)',
                     }
                 }
             }
@@ -113,12 +114,12 @@
             <img src="./images/banner.png" class="w-full" />
         </div>
 
-        <div class="absolute flex flex-col justify-center items-center lg:left-0 right-0 top-0 bottom-0 lg:gap-y-6">
-            <h1 class="text-lg lg:text-6xl lg:font-extrabold text-white">End-to-End Travel with P Paribahan</h1>
+        <div class="absolute flex flex-col justify-center items-center lg:left-0 right-0 top-0 bottom-0  lg:gap-y-6">
+            <h1 class="text-base lg:text-6xl lg:font-extrabold text-white">End-to-End Travel with P Paribahan</h1>
             <h2 class="text-banner-text-color text-lg lg:text-6xl font-extrabold">P Paribahan</h2>
             <p class="text-sm items-center text-center lg:text-lg font-normal text-white ">Yes, you can run unit tests
                 and view the results directly within
-                the app. The integrated testing features allow for a streamlined .</p>
+                the app.</p>
             <button class="btn bg-banner-text-color border-none lg:font-bold lg:text-xl">Buy Tickets</button>
         </div>
     </div>
@@ -433,7 +434,8 @@
                                 <p>BDT <span id="total-cost">0</span></p>
                             </div>
                             <label class="input justify-between input-bordered flex items-center gap-[10px] lg:gap-2">
-                                <input id="cupon-input" type="text" class=" h-16 lg:justify-end" placeholder="Have You any Cupon ?" />
+                                <input id="cupon-input" type="text" class=" h-16 lg:justify-end"
+                                    placeholder="Have You any Cupon ?" />
                                 <span id="cupon-btn"
                                     class="btn -ml-14 lg:ml-10 bg-banner-text-color lg:w-[100px] text-white">Apply</span>
                             </label>
@@ -470,8 +472,15 @@
                                 class="input input-bordered w-full lg:w-[570px]" />
                         </label> -->
 
-                        <button id="next-btn"
-                            class="btn bg-banner-text-color w-full lg:w-[570px] text-white font-extrabold">Next</button>
+                        <!-- <button id="next-btn"
+                            class="btn bg-banner-text-color w-full lg:w-[570px] text-white font-extrabold">Next</button> -->
+
+                        <!-- The button to open modal -->
+                        <a href="#my_modal_8"
+                            class="btn w-full bg-banner-text-color  text-white font-extrabold">Next</a>
+
+
+
                         <div class="flex flex-row justify-between mt-3">
                             <div>
                                 <p class="text-sm text-gray-500">Terms and Conditions</p>
@@ -488,8 +497,11 @@
 
             </div>
 
+
         </section>
         <!-- seat section end -->
+
+
     </main>
 
     <footer class="mt-6">
@@ -524,6 +536,29 @@
     </footer>
 
     <script src="scripts.js"></script>
+
+    <!-- modal second part -->
+    <div class="modal role=" dialog" id="my_modal_8">
+        <div class="modal-box">
+
+            <div class="flex flex-col justify-center">
+               <div class="flex flex-col justify-center items-center">
+                <img class="w-[90px] h-[80px]" src="./images/success.png" alt="">
+                <h2 class="text-modal-text-clr font-extrabold">SUCCESS</h2>
+               </div>
+                <p class="text-zinc-950 font-semibold text-center">Thank you for Booking Our Bus Seats.
+                    We are working hard to find the best service and deals for you.
+                </p>
+                <p class="text-center">Shortly you will find a confirmation in your email.</p>
+
+            </div>
+
+
+            <div class="modal-action">
+                <a href="#" class="btn items-center bg-banner-text-color text-white">Continue</a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
