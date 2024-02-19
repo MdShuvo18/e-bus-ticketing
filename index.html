@@ -40,7 +40,6 @@
             display: flex;
             gap: 40px;
         }
-
     </style>
 
     <!-- customized color -->
@@ -65,65 +64,70 @@
 
 </head>
 
-<body class="">
-    <!-- nav bar start -->
-    <nav class="raleway">
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
+<body>
+    <header class="p-7">
+        <!-- nav bar start -->
+        <nav class="raleway">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="font-medium text-lg menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
                     </div>
-                    <ul tabindex="0"
-                        class="font-medium text-lg menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <a class="btn btn-ghost lg:text-4xl font-extrabold text-black">e-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="font-medium text-lg  menu menu-horizontal px-1">
                         <li><a>Home</a></li>
                         <li><a>About</a></li>
                         <li><a>Destination</a></li>
                         <li><a>Search</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost lg:text-4xl font-extrabold text-black">e-Ticket</a>
+                <div class="navbar-end ">
+                    <a class="btn bg-nav-btn-bg">
+                        <div class="flex justify-center items-center gap-x-1 rounded-xl ">
+                            <p class="text-nav-btn-text-color">Bus</p>
+                            <img src="./images/bus-icon.png" alt="">
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="font-medium text-lg  menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Destination</a></li>
-                    <li><a>Search</a></li>
-                </ul>
+        </nav>
+        <!-- nav bar end -->
+
+        <!-- banner start -->
+        <div class="carousel w-full relative">
+            <div id="item1" class="carousel-item w-full">
+                <img src="./images/banner.png" class="w-full" />
             </div>
-            <div class="navbar-end ">
-                <a class="btn bg-nav-btn-bg">
-                    <div class="flex justify-center items-center gap-x-1 rounded-xl ">
-                        <p class="text-nav-btn-text-color">Bus</p>
-                        <img src="./images/bus-icon.png" alt="">
-                    </div>
-                </a>
+
+            <div
+                class="absolute flex flex-col justify-center items-center lg:left-0 right-0 top-0 bottom-0  lg:gap-y-6">
+                <h1 class="text-base lg:text-6xl lg:font-extrabold text-white">End-to-End Travel with S Paribahan</h1>
+                <h2 class="text-banner-text-color text-lg lg:text-6xl font-extrabold">S Paribahan</h2>
+                <p class="text-sm items-center text-center lg:text-lg font-normal text-white ">S - Paribahan is
+                    apparently a family owned transport company specializing in transportation of passenger bus
+                    services.</p>
+                <button class="btn bg-banner-text-color border-none lg:font-bold lg:text-xl">Buy Tickets</button>
             </div>
         </div>
-    </nav>
-    <!-- nav bar end -->
+        <!-- banner end -->
+    </header>
 
-    <!-- banner start -->
-    <div class="carousel w-full relative">
-        <div id="item1" class="carousel-item w-full">
-            <img src="./images/banner.png" class="w-full" />
-        </div>
-
-        <div class="absolute flex flex-col justify-center items-center lg:left-0 right-0 top-0 bottom-0  lg:gap-y-6">
-            <h1 class="text-base lg:text-6xl lg:font-extrabold text-white">End-to-End Travel with S Paribahan</h1>
-            <h2 class="text-banner-text-color text-lg lg:text-6xl font-extrabold">S Paribahan</h2>
-            <p class="text-sm items-center text-center lg:text-lg font-normal text-white ">S - Paribahan is apparently a family owned transport company specializing in transportation of passenger bus services.</p>
-            <button class="btn bg-banner-text-color border-none lg:font-bold lg:text-xl">Buy Tickets</button>
-        </div>
-    </div>
-    <!-- banner end -->
-
-    <main>
+    <main class="p-7">
         <!-- best offers for you section start-->
         <section class="mt-24">
             <div class="flex flex-col gap-y-8 justify-center items-center">
@@ -186,8 +190,10 @@
             <div class="relative">
 
                 <div class="">
-                    <h1 class="raleway mb-6 text-4xl font-bold text-center">S   Paribahan</h1>
-                    <p class="text-sm mb-6 items-center text-center lg:text-lg font-normal text-gray-400">S - Paribahan is apparently a family owned transport company specializing in transportation of passenger bus services.</p>
+                    <h1 class="raleway mb-6 text-4xl font-bold text-center">S Paribahan</h1>
+                    <p class="text-sm mb-6 items-center text-center lg:text-lg font-normal text-gray-400">S - Paribahan
+                        is apparently a family owned transport company specializing in transportation of passenger bus
+                        services.</p>
                 </div>
 
                 <div class="card  w-full h-[418px] bg-p.h-paribavan-bg text-neutral-content ">
@@ -290,8 +296,8 @@
                         <p class="inter text-lg ">A</p>
                         <div class="flex flex-col items-center justify-center lg:flex-row">
                             <div class="flex flex-col items-center justify-center lg:flex-row sm:gap-y-2 lg:space-x-8">
-                                <button  id="A1" class="sit myButton btn btn-sm w-[110px]">A1</button>
-                                <button  id="A2" class="sit myButton btn btn-sm w-[110px]">A2</button>
+                                <button id="A1" class="sit myButton btn btn-sm w-[110px]">A1</button>
+                                <button id="A2" class="sit myButton btn btn-sm w-[110px]">A2</button>
                                 <button id="A3" class="sit myButton btn btn-sm w-[110px]">A3</button>
                                 <button id="A4" class="sit myButton btn btn-sm w-[110px]">A4</button>
                             </div>
@@ -408,7 +414,9 @@
 
                         <div class="card-body">
                             <div class="inter font-medium flex justify-center items-center text-black">
-                                <p class="lg:ml-24">Sit <span id="sit-add" class="text-white text-xl font-extrabold  border rounded-full bg-green-800">0</span></p>
+                                <p class="lg:ml-24">Sit <span id="sit-add"
+                                        class="text-white text-xl font-extrabold  border rounded-full bg-green-800">0</span>
+                                </p>
                                 <p class="">Class</p>
                                 <p class="">Price</p>
                             </div>
@@ -428,7 +436,8 @@
                                 <h3>Total</h3>
                                 <p>BDT <span id="total-cost">0</span></p>
                             </div>
-                            <label id="input-label" class="input justify-between input-bordered flex items-center gap-[10px] lg:gap-2">
+                            <label id="input-label"
+                                class="input justify-between input-bordered flex items-center gap-[10px] lg:gap-2">
                                 <input id="cupon-input" type="text" class=" lg:justify-end"
                                     placeholder="Have Cupon ?" />
                                 <span id="cupon-btn"
@@ -535,10 +544,10 @@
         <div class="modal-box">
 
             <div class="flex flex-col justify-center">
-               <div class="flex flex-col justify-center items-center">
-                <img class="w-[90px] h-[80px]" src="./images/success.png" alt="">
-                <h2 class="text-modal-text-clr font-extrabold">SUCCESS</h2>
-               </div>
+                <div class="flex flex-col justify-center items-center">
+                    <img class="w-[90px] h-[80px]" src="./images/success.png" alt="">
+                    <h2 class="text-modal-text-clr font-extrabold">SUCCESS</h2>
+                </div>
                 <p class="text-zinc-950 font-semibold text-center">Thank you for Booking Our Bus Seats.
                     We are working hard to find the best service and deals for you.
                 </p>
