@@ -35,6 +35,12 @@
         .footer-hr {
             border: 1.5px dashed rgba(255, 255, 255, 0.3);
         }
+
+        li{
+            display: flex;
+            gap:40px;
+           
+        }
     </style>
 
     <!-- customized color -->
@@ -411,33 +417,23 @@
                                 <p>Price</p>
                             </div>
                             <hr class="hr-border  mb-3">
-                            <div class="inter font-medium flex justify-center items-center">
-                                <p>A1</p>
+                            <div class="inter font-medium flex justify-center items-center gap-10 ">
+                                <!-- <p>A1</p>
                                 <p>Economoy</p>
-                                <p>550</p>
+                                <p>550</p> -->
+                                <ul id="ticket-container" class="">
+
+                                </ul>
                             </div>
-                            <div class="inter font-medium flex justify-center items-center">
-                                <p>A1</p>
-                                <p>Economoy</p>
-                                <p>550</p>
-                            </div>
-                            <div class="inter font-medium flex justify-center items-center">
-                                <p>A1</p>
-                                <p>Economoy</p>
-                                <p>550</p>
-                            </div>
-                            <div class="inter font-medium flex justify-center items-center">
-                                <p>A1</p>
-                                <p>Economoy</p>
-                                <p>550</p>
-                            </div>
+
                             <hr class="hr-border  mb-3">
+
                             <div class="flex flex-row gap-[120px] lg:gap-[300px] text-black">
                                 <h3>Total</h3>
-                                <p>BDT 1100</p>
+                                <p>BDT <span id="total-cost">0</span></p>
                             </div>
                             <label class="input justify-between input-bordered flex items-center gap-[10px] lg:gap-2">
-                                <input type="text" class=" h-16 lg:justify-end" placeholder="Search" />
+                                <input type="text" class=" h-16 lg:justify-end" placeholder="Have You any Cupon ?" />
                                 <span
                                     class="btn -ml-14 lg:ml-10 bg-banner-text-color lg:w-[100px] text-white">Apply</span>
                             </label>
@@ -447,7 +443,7 @@
                         <div
                             class="flex flex-row justify-center gap-[120px] lg:gap-[300px] text-black pb-3 items-center lg:mr-12">
                             <h3>Grand Total</h3>
-                            <p>BDT 1100</p>
+                            <p>BDT <span id="grand-total">0</span></p>
                         </div>
                     </div>
 
@@ -526,7 +522,7 @@
 
         </footer>
     </footer>
-    
+
     <script src="scripts.js"></script>
 </body>
 
