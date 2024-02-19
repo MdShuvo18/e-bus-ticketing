@@ -5,9 +5,6 @@ let sitAdd = 0;
 for (const sit of sits) {
    sit.addEventListener('click', function (e) {
 
-      // set sitinnerText
-
-
 
 
       if (sitAdd <= 3) {
@@ -65,6 +62,54 @@ for (const sit of sits) {
 }
 
 
+// cuppon apply button
+document.getElementById('cupon-btn').addEventListener('click', function (e) {
+
+   const cuponInput = document.getElementById('cupon-input');
+
+   if (cuponInput.value === 'NEW15') {
+      const discountNew = 15;
+      const grandTotal = document.getElementById('grand-total').innerText;
+      const convertedGrandTotal = parseInt(grandTotal);
+      console.log('total cost :', convertedGrandTotal)
+
+      const afterDiscount = (discountNew / 100) * convertedGrandTotal;
+      console.log('discount price :', afterDiscount)
+
+      const GrandCost = convertedGrandTotal - afterDiscount;
+      const finalGrandCost = parseInt(GrandCost)
+      console.log(finalGrandCost)
+
+      document.getElementById('grand-total').innerText = finalGrandCost;
+      document.getElementById('cupon-btn').style.visibility = 'hidden'
+
+
+
+   } else if (cuponInput.value === 'Couple 20') {
+      const discountNew2 = 20;
+      const grandTotal = document.getElementById('grand-total').innerText;
+      const convertedGrandTotal = parseInt(grandTotal);
+
+      const afterDiscount2 = (discountNew2 / 100) * convertedGrandTotal;
+      const GrandCost = convertedGrandTotal - afterDiscount2;
+      const finalGrandCost = parseInt(GrandCost);
+
+      document.getElementById('grand-total').innerText = finalGrandCost;
+      document.getElementById('cupon-btn').style.visibility = 'hidden'
+
+      console.log('20% off')
+   } else {
+      alert('please enter  a cupon')
+   }
+});
+
+
+
+// next button function
+document.getElementById('next-btn').addEventListener('click', function () {
+   const personName = document.getElementById('passenger-name').value;
+  
+})
 
 
 
